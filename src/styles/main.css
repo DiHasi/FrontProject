@@ -1,2 +1,9 @@
 @import 'global/normalize.css';
 @import 'global/utility.css';
+@import 'global/navbar.css';
+@import 'global/page.css';
+@import 'global/rectangle-left.css';
+@import 'global/rectangle-right.css';
+@import 'global/useful-info.css';
+@import 'global/articles.css';
+@import 'global/footer.css';

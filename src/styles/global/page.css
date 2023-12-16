@@ -1,0 +1,12 @@
+.page {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding: 0 20%;
+}
+
+.page__title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+}

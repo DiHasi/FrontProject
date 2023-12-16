@@ -1,0 +1,21 @@
+.rectangle-right {
+  background-color: white;
+  flex-grow: 1;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.rectangle-right__title {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.rectangle-right__article-title {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.rectangle-right__article-content {
+  margin-bottom: 10px;
+}
