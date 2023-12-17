@@ -8,109 +8,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/styles/main.css" />
 
     <title>Проект</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar__content">
-        <div class="navbar__group navbar__group--left">
-          <a href="#" class="navbar__logo">
-            <img src="src/images/ikit-logo.png" class="navbar__logo-image" alt="Logo"
-          /></a>
-          <a href="#" class="navbar__link">Главная</a>
-          <a href="#" class="navbar__link">Информация</a>
-          <a href="#" class="navbar__link">Новости</a>
-          <a href="#" class="navbar__link">Контакты</a>
+    <header class="navbar">
+      <nav class="navbar container">
+        <div class="navbar__content">
+          <div class="navbar__group navbar__group--left">
+            <img src="/images/ikit-logo.png" class="navbar__logo-image" alt="Logo" />
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--active"><a href="#" class="menu__link">Главная</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Информация</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="navbar__group navbar__group--right">
+            <span class="navbar__username">Khorunov Kirill</span>
+            <img src="/images/avatar.png" class="navbar__image" alt="Avatar" />
+          </div>
         </div>
-        <div class="navbar__group navbar__group--right">
-          <span class="navbar__username">Khorunov Kirill</span>
-          <img src="https://avatars.githubusercontent.com/u/90962881" class="navbar__image" alt="Avatar" />
-        </div>
-      </div>
-    </nav>
-
-    <div class="page">
+      </nav>
+    </header>
+    <div class="page container">
       <h1 class="page__title">Личная страница</h1>
-      <div class="useful-info">
+      <section class="useful-info">
         <h2 class="useful-info__title">Полезная информация</h2>
         <div class="useful-info__content">
-          <div class="rectangle-left">
-            <h3 class="rectangle-left__title">Заголовок</h3>
-            <ul class="rectangle-left__list">
-              <li class="rectangle-left__item">Элемент 1</li>
-              <li class="rectangle-left__item">Элемент 2</li>
-              <li class="rectangle-left__item">Элемент 3</li>
-              <li class="rectangle-left__item">Элемент 4</li>
+          <section class="sidebar">
+            <h3 class="sidebar__title">Заголовок</h3>
+            <ul class="sidebar__list">
+              <li class="sidebar__item">Элемент 1</li>
+              <li class="sidebar__item">Элемент 2</li>
+              <li class="sidebar__item">Элемент 3</li>
+              <li class="sidebar__item">Элемент 4</li>
             </ul>
-          </div>
-          <div class="rectangle-right">
-            <h2 class="rectangle-right__title">Заголовок</h2>
-            <article class="rectangle-right__article">
-              <h3 class="rectangle-right__article-title">Заголовок</h3>
-              <p class="rectangle-right__article-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-              </p>
-            </article>
-            <article class="rectangle-right__article">
-              <h3 class="rectangle-right__article-title">Заголовок</h3>
-              <p class="rectangle-right__article-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-              </p>
-            </article>
-          </div>
+          </section>
+          <section class="news">
+            <h2 class="news__title">Заголовок</h2>
+            <section class="news__list">
+              <section class="news-article">
+                <h3 class="news-article__title">Заголовок статьи</h3>
+                <p class="news-article__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </section>
+              <section class="news-article">
+                <h3 class="news-article__title">Заголовок статьи</h3>
+                <p class="news-article__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </section>
+            </section>
+          </section>
         </div>
-      </div>
-      <div class="articles">
-        <h2 class="articles__title">Заголовок</h2>
-        <p class="articles__description">Краткое описание</p>
-        <div class="articles__cards">
-          <div class="articles__card">
-            <img src="/src/images/foto1.jpg" class="articles__card-image" alt="Image description" />
-            <div class="articles__card-content">
-              <h3 class="articles__card-title">Заголовок статьи</h3>
-              <p class="articles__card-text">Текст статьи</p>
-              <p class="articles__card-info">Mar 16, 2020 · 6 min read</p>
+      </section>
+      <section class="interesting-articles">
+        <h2 class="interesting-articles__title">Заголовок</h2>
+        <p class="interesting-articles__description">Краткое описание</p>
+        <div class="interesting-articles__cards">
+          <article class="card">
+            <img src="/images/foto1.jpg" class="card__image" alt="Image description" />
+            <div class="card__content">
+              <h3 class="card__title">Boost your conversion rate</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
+                atque fuga culpa, similique sequi cum eos quis dolorum.
+              </p>
+              <p class="card__info">Mar 16, 2020 · 6 min read</p>
             </div>
-          </div>
-          <div class="articles__card">
-            <img src="/src/images/foto2.jpg" class="articles__card-image" alt="Image description" />
-            <div class="articles__card-content">
-              <h3 class="articles__card-title">Заголовок статьи</h3>
-              <p class="articles__card-text">Текст статьи</p>
-              <p class="articles__card-info">Mar 16, 2020 · 6 min read</p>
+          </article>
+          <article class="card">
+            <img src="/images/foto2.jpg" class="card__image" alt="Image description" />
+            <div class="card__content">
+              <h3 class="card__title">How to use search engine optimization to drive sales</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat
+                doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo
+                laudantium.
+              </p>
+              <p class="card__info">Mar 10, 2020 · 4 min read</p>
             </div>
-          </div>
-          <div class="articles__card">
-            <img src="/src/images/foto3.jpg" class="articles__card-image" alt="Image description" />
-            <div class="articles__card-content">
-              <h3 class="articles__card-title">Заголовок статьи</h3>
-              <p class="articles__card-text">Текст статьи</p>
-              <p class="articles__card-info">Jun 16, 2023 · 15 min read</p>
+          </article>
+          <article class="card">
+            <img src="/images/foto3.jpg" class="card__image" alt="Image description" />
+            <div class="card__content">
+              <h3 class="card__title">Improve your customer experience</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae
+                magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
+              </p>
+              <p class="card__info">Feb 12, 2020 · 11 min read</p>
             </div>
-          </div>
-          <div class="articles__card">
-            <img src="/src/images/foto4.jpg" class="articles__card-image" alt="Image description" />
-            <div class="articles__card-content">
-              <h3 class="articles__card-title">Заголовок статьи</h3>
-              <p class="articles__card-text">Текст статьи</p>
-              <p class="articles__card-info">Mar 16, 2020 · 6 min read</p>
-            </div>
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
     </div>
     <footer class="footer">
-      <div class="footer__text">© 2023 Институт космических и информационных технологий СФУ</div>
+      <div class="footer__content container">
+        <div class="footer__text">© 2023 Институт космических и информационных технологий СФУ</div>
+      </div>
     </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
