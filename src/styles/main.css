@@ -5,6 +5,8 @@
 @import 'blocks/sidebar.css';
 @import 'blocks/news.css';
 @import 'blocks/useful-info.css';
-@import 'blocks/Interesting-articles.css';
+@import 'blocks/interesting-articles.css';
 @import 'blocks/footer.css';
 @import 'blocks/menu.css';
+@import 'blocks/card.css';
+@import 'blocks/news-article.css';

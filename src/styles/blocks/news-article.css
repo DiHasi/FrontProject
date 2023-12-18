@@ -1,0 +1,14 @@
+.news-article {
+}
+
+.news-article__title {
+  padding-top: 26px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.news-article__content {
+  padding-top: 15px;
+}

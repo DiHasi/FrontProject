@@ -6,8 +6,7 @@
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  width: 1259px;
-  height: 666px;
+  min-height: 580px;
 }
 
 .useful-info__title {
