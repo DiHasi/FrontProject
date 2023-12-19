@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   min-height: 580px;
+  gap: 21px;
 }
 
 .useful-info__title {
