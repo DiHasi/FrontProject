@@ -12,10 +12,112 @@
     <title>Проект</title>
   </head>
   <body>
-    <div class="container">
-      <h1 style="text-align: center">ПУСТОЙ ПРОЕКТ</h1>
+    <header class="navbar">
+      <nav class="navbar container">
+        <div class="navbar__content">
+          <div class="navbar__group navbar__group--left">
+            <img src="/images/ikit-logo.png" class="navbar__logo-image" alt="Logo" />
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--active"><a href="#" class="menu__link">Главная</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Информация</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="navbar__group navbar__group--right">
+            <span class="navbar__username">Khorunov Kirill</span>
+            <img src="/images/avatar.png" class="navbar__image" alt="Avatar" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="page container">
+      <h1 class="page__title">Личная страница</h1>
+      <section class="useful-info">
+        <h2 class="useful-info__title">Полезная информация</h2>
+        <div class="useful-info__content">
+          <section class="sidebar">
+            <h3 class="sidebar__title">Заголовок</h3>
+            <ul class="sidebar__list">
+              <li class="sidebar__item">Элемент 1</li>
+              <li class="sidebar__item">Элемент 2</li>
+              <li class="sidebar__item">Элемент 3</li>
+              <li class="sidebar__item">Элемент 4</li>
+            </ul>
+          </section>
+          <section class="news">
+            <h2 class="news__title">Заголовок</h2>
+            <section class="news__list">
+              <section class="news-article">
+                <h3 class="news-article__title">Заголовок статьи</h3>
+                <p class="news-article__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </section>
+              <section class="news-article">
+                <h3 class="news-article__title">Заголовок статьи</h3>
+                <p class="news-article__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </section>
+            </section>
+          </section>
+        </div>
+      </section>
+      <section class="interesting-articles">
+        <h2 class="interesting-articles__title">Заголовок</h2>
+        <p class="interesting-articles__description">Краткое описание</p>
+        <div class="interesting-articles__cards">
+          <article class="card">
+            <img src="/images/foto1.jpg" class="card__image" alt="Image description" />
+            <div class="card__content">
+              <h3 class="card__title">Boost your conversion rate</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
+                atque fuga culpa, similique sequi cum eos quis dolorum.
+              </p>
+              <p class="card__info">Mar 16, 2020 · 6 min read</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="/images/foto2.jpg" class="card__image" alt="Image description" />
+            <div class="card__content">
+              <h3 class="card__title">How to use search engine optimization to drive sales</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat
+                doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo
+                laudantium.
+              </p>
+              <p class="card__info">Mar 10, 2020 · 4 min read</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="/images/foto3.jpg" class="card__image" alt="Image description" />
+            <div class="card__content">
+              <h3 class="card__title">Improve your customer experience</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae
+                magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
+              </p>
+              <p class="card__info">Feb 12, 2020 · 11 min read</p>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
-
+    <footer class="footer">
+      <div class="footer__content container">
+        <div class="footer__text">© 2023 Институт космических и информационных технологий СФУ</div>
+      </div>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

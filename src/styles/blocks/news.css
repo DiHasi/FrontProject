@@ -1,0 +1,17 @@
+.news {
+  background-color: white;
+  flex-grow: 1;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.news__title {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.news__list {
+  gap: 20px;
+}

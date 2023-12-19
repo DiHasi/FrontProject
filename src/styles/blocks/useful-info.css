@@ -1,0 +1,18 @@
+.useful-info {
+  padding-top: 65px;
+}
+
+.useful-info__content {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 580px;
+  gap: 21px;
+}
+
+.useful-info__title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
