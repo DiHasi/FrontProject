@@ -28,3 +28,35 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
+
+@media (width < 1280px) {
+  .interesting-articles__title {
+    font-size: 24px;
+  }
+
+  .interesting-articles__description {
+    font-size: 16px;
+  }
+}
+
+@media (width < 1024px) {
+  .interesting-articles {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .interesting-articles__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width < 576px) {
+  .interesting-articles {
+    padding-bottom: 40px;
+  }
+
+  .interesting-articles__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

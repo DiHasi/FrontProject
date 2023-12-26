@@ -10,3 +10,16 @@
   line-height: normal;
   padding-top: 65px;
 }
+
+@media (width < 1280px) {
+  .page__title {
+    padding-top: 40px;
+    font-size: 35px;
+  }
+}
+
+@media (width < 768px) {
+  .page__title {
+    font-size: 22px;
+  }
+}

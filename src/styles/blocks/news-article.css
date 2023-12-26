@@ -12,3 +12,9 @@
 .news-article__content {
   padding-top: 15px;
 }
+
+@media (width < 576px) {
+  .news-article__content {
+    font-size: 15px;
+  }
+}

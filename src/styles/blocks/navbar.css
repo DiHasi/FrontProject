@@ -59,3 +59,35 @@
   width: 32px;
   height: 32px;
 }
+
+@media (width < 1280px) {
+  .navbar__group--left {
+    gap: 20px;
+  }
+}
+
+@media (width < 1024px) {
+  .navbar__logo-image {
+    display: none;
+  }
+}
+
+@media (width < 768px) {
+  .navbar__username {
+    display: none;
+  }
+}
+
+@media (width < 576px) {
+  .navbar__image {
+    display: none;
+  }
+
+  .navbar__content {
+    justify-content: center;
+  }
+
+  .navbar__group--right {
+    display: none;
+  }
+}
