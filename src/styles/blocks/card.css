@@ -53,14 +53,18 @@
   .card__title {
     font-size: 17px;
   }
+
+  .card__info {
+    font-size: 14px;
+  }
 }
 
 @media (width < 576px) {
-  .card__text {
-    font-size: 15px;
+  .card__info {
+    font-size: 13px;
   }
 
-  .card__info {
-    font-size: 16px;
+  .card__content {
+    min-height: 0;
   }
 }
