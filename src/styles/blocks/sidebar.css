@@ -16,3 +16,17 @@
   list-style-type: disc;
   list-style-position: inside;
 }
+
+@media (width < 768px) {
+  .sidebar__title {
+    font-size: 18px;
+  }
+
+  .sidebar__list {
+    padding-top: 10px;
+  }
+
+  .sidebar__item {
+    font-size: 15px;
+  }
+}

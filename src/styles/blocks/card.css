@@ -44,3 +44,27 @@
 .card__info {
   text-align: left;
 }
+
+@media (width < 1280px) {
+  .card__text {
+    font-size: 15px;
+  }
+
+  .card__title {
+    font-size: 17px;
+  }
+
+  .card__info {
+    font-size: 14px;
+  }
+}
+
+@media (width < 576px) {
+  .card__info {
+    font-size: 13px;
+  }
+
+  .card__content {
+    min-height: 0;
+  }
+}
