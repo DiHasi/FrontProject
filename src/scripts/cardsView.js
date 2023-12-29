@@ -3,7 +3,6 @@ export function changeCardsView(view) {
   const gridButton = document.querySelector('.interesting-articles__button-grid');
   const cards = document.querySelector('.interesting-articles__cards');
   const cardList = document.querySelectorAll('.card');
-  const cardImageList = document.querySelectorAll('.card__image');
 
   const isListView = view === 'list';
 
@@ -15,13 +14,9 @@ export function changeCardsView(view) {
   listButton.classList.toggle('interesting-articles__button--selected', isListView);
   gridButton.classList.toggle('interesting-articles__button--selected', !isListView);
 
-  if (isListView) {
-    cardList.forEach((card) => card.classList.add('card--list'));
-    cardImageList.forEach((img) => img.classList.add('card__image--list'));
-  } else {
-    cardList.forEach((card) => card.classList.remove('card--list'));
-    cardImageList.forEach((img) => img.classList.remove('card__image--list'));
-  }
+  cardList.forEach((card) => {
+    card.classList.toggle('card--list', isListView);
+  });
 }
 
 const listButton = document.querySelector('.interesting-articles__button-list');

@@ -20,7 +20,7 @@
   object-fit: cover;
 }
 
-.card__image--list {
+.card--list .card__image {
   border-radius: 6px 0 0 6px;
   height: 100%;
   width: 400px;
@@ -70,13 +70,13 @@
 }
 
 @media (width < 1024px) {
-  .card__image--list {
+  .card--list .card__image {
     width: 300px;
   }
 }
 
 @media (width < 768px) {
-  .card__image--list {
+  .card--list .card__image {
     width: 200px;
   }
 }
@@ -94,7 +94,7 @@
     min-height: 0;
   }
 
-  .card__image--list {
+  .card--list .card__image {
     height: 192px;
     width: 100%;
     border-radius: 6px 6px 0 0;
