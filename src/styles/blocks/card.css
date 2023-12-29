@@ -9,11 +9,21 @@
   background: #fff;
 }
 
+.card--list {
+  flex-direction: row;
+}
+
 .card__image {
   height: 192px;
   width: 100%;
-  border-radius: 8px 8px 0 0;
+  border-radius: 6px 6px 0 0;
   object-fit: cover;
+}
+
+.card--list .card__image {
+  border-radius: 6px 0 0 6px;
+  height: 100%;
+  width: 400px;
 }
 
 .card__content {
@@ -59,12 +69,34 @@
   }
 }
 
+@media (width < 1024px) {
+  .card--list .card__image {
+    width: 300px;
+  }
+}
+
+@media (width < 768px) {
+  .card--list .card__image {
+    width: 200px;
+  }
+}
+
 @media (width < 576px) {
   .card__info {
     font-size: 13px;
   }
 
+  .card--list {
+    flex-direction: column;
+  }
+
   .card__content {
     min-height: 0;
+  }
+
+  .card--list .card__image {
+    height: 192px;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
   }
 }

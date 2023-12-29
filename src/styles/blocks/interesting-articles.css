@@ -24,9 +24,28 @@
 
 .interesting-articles__cards {
   padding-top: 48px;
+  gap: 20px;
+}
+
+.interesting-articles__cards--list {
+  display: flex;
+  flex-direction: column;
+}
+
+.interesting-articles__cards--grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+}
+
+.interesting-articles__switches {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.interesting-articles__button--selected {
+  color: #ea1313;
 }
 
 @media (width < 1280px) {
@@ -57,5 +76,9 @@
 
   .interesting-articles__cards {
     grid-template-columns: 1fr;
+  }
+
+  .interesting-articles__switches {
+    display: none;
   }
 }
