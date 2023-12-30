@@ -57,6 +57,10 @@
   .button--add {
     grid-column: 2 / 12;
   }
+
+  .button {
+    font-size: 15px;
+  }
 }
 
 @media (width < 576px) {
