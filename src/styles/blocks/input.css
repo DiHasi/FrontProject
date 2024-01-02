@@ -1,0 +1,28 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__text {
+  min-height: 44px;
+}
+
+.input__label {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.input__description {
+  min-height: 128px;
+}
+
+@media (width < 768px) {
+  .input__label {
+    font-size: 16px;
+  }
+}
