@@ -22,10 +22,6 @@
 }
 
 @media (width < 1024px) {
-  .form {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
   .form__create-card {
     grid-column: 2 / -2;
   }
